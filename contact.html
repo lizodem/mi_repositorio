@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIAU Gatito - Contacto</title>
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+  <body>
+    <!------HEADER------>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./images/logonuevo.png" height="70px" width="180px">
+      </div>
+      <!-------MENU BAR------->
+      <nav class="header__navegacion"> 
+        <a href="index.html" class="header__navegacion--inicio"> Inicio </a>
+        <a href="aboutus.html" class="header__navegacion--sobre"> Sobre Nosotros </a>
+        <a href="adopt.html" class="header__navegacion--adopt"> Adopta </a> 
+        <a href="events.html" class="header__navegacion--event"> Eventos </a> 
+        <a href="contact.html" class="header__navegacion--contact"> Contacto </a> 
+      </nav>
+    </header>
+    <!-------SECTION CONTACT------->
+    <div class="container">
+      <section class="container__titulo">
+        <h1 class="animate__animated animate__jackInTheBox">Contáctanos</h1>
+        <p>Escribenos para cualquier consulta y en breve nos pondremos en contacto contigo.</p>
+      </section>
+      <form method="GET" class="form">
+        <fieldset class="container__form">
+          <legend>Introduce tus datos</legend>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="Escribe aquí tu nombre"/>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Escribe aquí tu email"/> 
+          <label for="telefono">Teléfono</label>
+          <input type="text" name="telefono" placeholder="Escribe aquí tu teléfono (opcional)"/>
+          <label for="consulta">Tipo de consulta</label>
+          <select name="consulta">
+            <option>Voluntariado</option>
+            <option>Patrocinadores</option>
+            <option>Adopciones</option>
+            <option>Otro</option>
+          </select>
+          <label for="mensaje">¿Cuál es tu consulta?</label>
+          <textarea name="mensaje" cols="40" rows="5">Redacta aquí tu mensaje...</textarea>
+          <div>
+            <input type="checkbox" name="newsletter" /> 
+            <label for="newsletter">Quiero recibir newsletter</label>
+          </div>
+          <div>
+            <input class="estilo-boton" type="submit" value="enviar"/> 
+            <input class="estilo-boton" type="reset" value="borrar"/>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <!------FOOTER------>
+    <footer class="footer">
+      <div class="footer__sec1">
+        <ul>
+          <li><strong>Inicio</strong></li>
+          <li>historia</li>
+          <li>contacto</li>
+          <li>politica de privacidad</li>
+        </ul>
+      </div>
+      <div class="footer__sec2">
+        <ul>
+          <li><strong>Adopta</strong></li>
+          <li>catalogo</li>
+          <li>voluntarios</li>
+          <li>patrocinadores</li>
+        </ul>
+      </div>
+      <div class="footer__sec3">
+        <ul>
+          <li><strong>Eventos</strong></li>
+          <li>Campañas</li>
+          <li>Concursos</li>
+          <li>donaciones</li>
+        </ul>
+      </div>
+      <div class="footer__sec4">
+      <ul>
+        <li><strong>Siguenos en redes sociales</strong></li>
+      </ul>
+    </footer>
+  </body>
+</html>
